@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace DatLichVietAPI\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

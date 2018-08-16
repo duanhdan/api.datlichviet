@@ -10,7 +10,7 @@ use Validator;
 class UserController extends Controller
 {
 	/**
-	 * @SWG\POST(
+	 * @SWG\Post(
 	 *   path="/user/register",
 	 *   tags={"user"},
 	 *   summary="Register new user",
@@ -94,7 +94,7 @@ class UserController extends Controller
 	}
 
 	/**
-	 * @SWG\POST(
+	 * @SWG\Post(
 	 *   path="/user/login",
 	 *   tags={"user"},
 	 *   summary="Login user",
@@ -120,7 +120,7 @@ class UserController extends Controller
 	}
 
 	/**
-	 * @SWG\POST(
+	 * @SWG\Post(
 	 *   path="/user/loginFacebook",
 	 *   tags={"user"},
 	 *   summary="Login facebook user",
@@ -155,7 +155,7 @@ class UserController extends Controller
 	}
 
 	/**
-	 * @SWG\POST(
+	 * @SWG\Post(
 	 *   path="/user/{userId}/forgot",
 	 *   tags={"user"},
 	 *   summary="Forgot password",
@@ -188,7 +188,7 @@ class UserController extends Controller
 	}
 
 	/**
-	 * @SWG\POST(
+	 * @SWG\Post(
 	 *   path="/user/{userId}/verify",
 	 *   tags={"user"},
 	 *   summary="Verify user action",
@@ -221,7 +221,7 @@ class UserController extends Controller
 	}
 
 	/**
-	 * @SWG\GET(
+	 * @SWG\Get(
 	 *   path="/user/{userId}",
 	 *   tags={"user"},
 	 *   summary="Get user informations",
@@ -245,7 +245,7 @@ class UserController extends Controller
 	}
 
 	/**
-	 * @SWG\PUT(
+	 * @SWG\Put(
 	 *   path="/user/{userId}",
 	 *   tags={"user"},
 	 *   summary="Update user information",
@@ -316,7 +316,7 @@ class UserController extends Controller
 	}
 
 	/**
-	 * @SWG\PUT(
+	 * @SWG\Put(
 	 *   path="/user/{userId}/avatar",
 	 *   tags={"user"},
 	 *   summary="Update user avatar",
@@ -349,7 +349,7 @@ class UserController extends Controller
 	}
 
 	/**
-	 * @SWG\PUT(
+	 * @SWG\Put(
 	 *   path="/user/{userId}/password",
 	 *   tags={"user"},
 	 *   summary="Set new password",
@@ -391,7 +391,7 @@ class UserController extends Controller
 	}
 
 	/**
-	 * @SWG\PUT(
+	 * @SWG\Put(
 	 *   path="/user/{userId}/device",
 	 *   tags={"user"},
 	 *   summary="Set device token for push notification",
@@ -448,7 +448,7 @@ class UserController extends Controller
 	}
 
 	/**
-	 * @SWG\GET(
+	 * @SWG\Get(
 	 *   path="/user/logout",
 	 *   tags={"user"},
 	 *   summary="Logout current user",

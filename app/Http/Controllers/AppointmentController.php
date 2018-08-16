@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class AppointmentController extends Controller
 {
 	/**
-	 * @SWG\GET(
+	 * @SWG\Get(
 	 *   path="/appointment/{appointmentId}",
 	 *   tags={"appointment"},
 	 *   summary="Get appointment informations",
@@ -40,7 +40,7 @@ class AppointmentController extends Controller
     }
 
     /**
-	 * @SWG\GET(
+	 * @SWG\Get(
 	 *   path="/appointment/user/{userId}",
 	 *   tags={"appointment"},
 	 *   summary="Get appointment of user informations",
@@ -64,7 +64,7 @@ class AppointmentController extends Controller
     }
 
     /**
-	 * @SWG\GET(
+	 * @SWG\Get(
 	 *   path="/appointment",
 	 *   tags={"appointment"},
 	 *   summary="Get appointment clients",
@@ -95,7 +95,7 @@ class AppointmentController extends Controller
     }
 
     /**
-	 * @SWG\POST(
+	 * @SWG\Post(
 	 *   path="/appointment",
 	 *   tags={"appointment"},
 	 *   summary="Setup an appointment",
@@ -130,7 +130,7 @@ class AppointmentController extends Controller
     }
 
     /**
-	 * @SWG\DELETE(
+	 * @SWG\Delete(
 	 *   path="/appointment/{appointmentId}",
 	 *   tags={"appointment"},
 	 *   summary="Cancel an appointment",

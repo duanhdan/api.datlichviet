@@ -8,7 +8,7 @@ class CustomerController extends Controller
 {
 
 	/**
-	 * @SWG\GET(
+	 * @SWG\Get(
 	 *   path="/user/{userId}/customer",
 	 *   tags={"customer"},
 	 *   summary="Get user's customers informations",
@@ -32,7 +32,7 @@ class CustomerController extends Controller
     }
 
     /**
-	 * @SWG\PUT(
+	 * @SWG\Put(
 	 *   path="/user/{userId}/customer/{customerId}",
 	 *   tags={"customer"},
 	 *   summary="Update customer informations",
@@ -63,7 +63,7 @@ class CustomerController extends Controller
     }
 
     /**
-	 * @SWG\DELETE(
+	 * @SWG\Delete(
 	 *   path="/user/{userId}/customer/{customerId}",
 	 *   tags={"customer"},
 	 *   summary="Delete customer informations",

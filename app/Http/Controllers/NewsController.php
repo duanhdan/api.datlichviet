@@ -8,7 +8,7 @@ class NewsController extends Controller
 {
 
 	/**
-	 * @SWG\GET(
+	 * @SWG\Get(
 	 *   path="/news",
 	 *   tags={"news"},
 	 *   summary="Get news informations",
@@ -39,7 +39,7 @@ class NewsController extends Controller
     }
 
     /**
-	 * @SWG\GET(
+	 * @SWG\Get(
 	 *   path="/news/{newsId}",
 	 *   tags={"news"},
 	 *   summary="Get news informations",

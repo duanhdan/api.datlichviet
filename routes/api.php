@@ -24,10 +24,20 @@ Route::get('v1/', function() {
 });
 
 Route::group(['middleware' => 'auth:api', 'prefix' => 'v1'], function(){
+	// Users
 	Route::get('user/', 'UserController@info');
 	Route::put('user/', 'UserController@update');
 	Route::put('user/avatar', 'UserController@avatar');
 	Route::put('user/password', 'UserController@password');
 	Route::put('user/device', 'UserController@device');
 	Route::get('user/logout', 'UserController@logout');
+
+	// Customers
+
+	// Appointments
+
+	// News
+	Route::get('news/', 'NewsController@index');
+	Route::get('news/{newsId}', 'NewsController@info');
+	// Settings
 });

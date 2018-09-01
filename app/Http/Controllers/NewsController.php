@@ -3,10 +3,10 @@
 namespace DatLichVietAPI\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DatLichVietAPI\Models\News;
 
 class NewsController extends Controller
 {
-
 	/**
 	 * @SWG\Get(
 	 *   path="/news",
@@ -57,8 +57,13 @@ class NewsController extends Controller
 	 * )
 	 *
 	 */
-    public function info()
+    public function info($id)
     {
-    	//
+    	$post = News::with('category')->findOrFail($id);
+
+    	return response()->json([
+    		'status' => 'success',
+    		'data' => $post
+    	]);
     }
 }

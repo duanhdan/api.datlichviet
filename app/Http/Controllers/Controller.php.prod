@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 /**
  * @SWG\Swagger(
- *   host="api.datlichviet.dev",
+ *   host="api.datlichviet.com",
  *   basePath="/v1",
  *   schemes={"https"},
  *   @SWG\Info(

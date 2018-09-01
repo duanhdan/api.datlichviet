@@ -9,9 +9,9 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 /**
  * @SWG\Swagger(
- *   host="api.datlichviet.dev",
+ *   host="sandbox.datlichviet.com",
  *   basePath="/v1",
- *   schemes={"https"},
+ *   schemes={"http"},
  *   @SWG\Info(
  *     title="Dat Lich Viet API",
  *     version="1.0.0"

@@ -3,6 +3,7 @@
 namespace DatLichVietAPI\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Laravel\Passport\Passport;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        Passport::routes();
+
+        Passport::tokensExpireIn(now()->addDays(365));
+
+        Passport::refreshTokensExpireIn(now()->addDays(380));
     }
 }

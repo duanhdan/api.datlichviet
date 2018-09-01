@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    echo 'welcome to datlichviet!';
 });
+

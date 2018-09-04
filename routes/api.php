@@ -33,11 +33,12 @@ Route::group(['middleware' => 'auth:api', 'prefix' => 'v1'], function(){
 	Route::get('user/logout', 'UserController@logout');
 
 	// Customers
-
+	Route::get('customer/', 'CustomerController@index');
 	// Appointments
 
 	// News
 	Route::get('news/', 'NewsController@index');
 	Route::get('news/{newsId}', 'NewsController@info');
 	// Settings
+	Route::get('setting/', 'SettingController@index');
 });
